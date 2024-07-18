@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="unit.css">
+    <link rel="stylesheet" href="proj.css">
+
+    <title>Unit Conversion</title>
+</head>
+
+<body>
+    <nav class="nav1">
+        <a href="http://127.0.0.1:5500/CSS_prac/Proj.html">
+            <img class="logo" src="logo1.jpg" alt="InfoHub-Logo">
+        </a>
+
+        <h1 style="margin-left:50px; color:coral;">Unit Converter</h1>
+        <div class="firstList">
+            <a href="http://127.0.0.1:5500/CSS_prac/proj.html"><button class="navBtn">Home</button></a>
+
+            <div class="dropdown">
+                <button class="navBtn dropdown-toggle">Tools</button>
+                <div class="dropdown-content">
+                    <a href="http://127.0.0.1:5500/CSS_prac/currencyConv.html">Currency Conversion</a>
+                    <a href="http://127.0.0.1:5500/CSS_prac/Calc.html">Length Conversion</a>
+                    <a href="http://127.0.0.1:5500/CSS_prac/unit.html">Unit Conversion</a>
+                </div>
+            </div>
+
+            <a href="http://127.0.0.1:5500/CSS_prac/contact.html"><button class="navBtn">Contact</button></a>
+        </div>
+    </nav>
+
+    <form action="#" id="unit-conversion-form">
+        <div class="unit-section">
+            <label class="convert-label" for="from-unit">From: </label>
+            <select name="from-unit" id="from-unit">
+                <option value="grams">grams</option>
+                <option value="kilograms">kilograms</option>
+                <option value="pounds">pounds</option>
+                <option value="ounces">ounces</option>
+                <option value="milligrams">milligrams</option>
+            </select>
+        </div>
+        <br>
+
+        <div class="unit-section">
+            <label class="convert-label" for="to-unit">To: </label>
+            <select name="to-unit" id="to-unit">
+                <option value="grams">grams</option>
+                <option value="kilograms">kilograms</option>
+                <option value="pounds">pounds</option>
+                <option value="ounces">ounces</option>
+                <option value="milligrams">milligrams</option>
+            </select>
+        </div>
+
+        <div class="amount-section">
+            <label class="convert-label" for="amount">Enter Amount: </label><br>
+            <input type="number" id="amount" name="amount" min="1" required>
+            <div id="result" class="result-section">
+                <label class="convert-label" for="result">Result:</label><br>
+                <span id="converted-result"></span>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="button-section">
+            <input type="submit" value="Convert" class="convert-button">
+            <input type="reset" value="Reset" class="reset-button">
+        </div>
+    </form>
+
+    <script src="unit.js"></script>
+</body>
+
+</html>

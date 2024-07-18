@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="proj.css">
+    <title>InfoHub</title>
+</head>
+
+<body>
+    <nav class="nav1">
+        <a href="http://127.0.0.1:5500/CSS_prac/Proj.html">
+            <img class="logo" src="logo1.jpg" alt="InfoHub-Logo">
+        </a>
+
+        <h1 style="margin-left: 7%;">Contact Us</h1>
+        <div class="firstList">
+            <a href="http://127.0.0.1:5500/CSS_prac/proj.html"><button class="navBtn">Home</button></a>
+
+            <div class="dropdown">
+                <button class="navBtn dropdown-toggle">Tools</button>
+                <div class="dropdown-content">
+                    <a href="http://127.0.0.1:5500/CSS_prac/currencyConv.html">Currency Conversion</a>
+                    <a href="http://127.0.0.1:5500/CSS_prac/Calc.html">Length Conversion</a>
+                    <a href="http://127.0.0.1:5500/CSS_prac/unit.html">Unit Conversion</a>
+                </div>
+            </div>
+
+            <a href="http://127.0.0.1:5500/CSS_prac/contact.html"><button class="navBtn">Contact</button></a>
+        </div>
+    </nav>
+
+    <section class="contact-section">
+        <h2>Get in Touch</h2>
+        <form action="#" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="submit-button" onclick="display()">Send Message</button>
+        </form>
+        <div id="message-container"></div>
+    </section>
+
+    <footer class="footer">
+        <a id="social" href="https://www.facebook.com/">Facebook</a>
+        <a id="social" href="https://www.instagram.com/">Instagram</a>
+        <a id="social" href="https://x.com/X">X</a>
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">Gmail</a>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+
+</html>

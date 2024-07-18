@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="currencyConv.css">
+    <link rel="stylesheet" href="proj.css">
+    <title>Currency Conversion</title>
+</head>
+
+<body>
+    <nav class="nav1">
+        <a href="http://127.0.0.1:5500/CSS_prac/Proj.html">
+            <img class="logo" src="logo1.jpg" alt="InfoHub-Logo">
+        </a>
+
+        <h1>Currency Converter</h1>
+        <div class="firstList">
+            <a href="http://127.0.0.1:5500/CSS_prac/proj.html"><button class="navBtn">Home</button></a>
+
+            <div class="dropdown">
+                <button class="navBtn dropdown-toggle">Tools</button>
+                <div class="dropdown-content">
+                    <a href="http://127.0.0.1:5500/CSS_prac/currencyConv.html">Currency Conversion</a>
+                    <a href="http://127.0.0.1:5500/CSS_prac/Calc.html">Length Conversion</a>
+                    <a href="http://127.0.0.1:5500/CSS_prac/unit.html">Unit Conversion</a>
+                </div>
+            </div>
+
+            <a href="http://127.0.0.1:5500/CSS_prac/contact.html"><button class="navBtn">Contact</button></a>
+        </div>
+    </nav>
+
+
+    <form class="Currency_Form" id="Currency-form" action="#" method="post">
+        <div>
+            <label for="Currency_from">From Currency: </label><br>
+            <select name="Currency_from" id="Currency_from">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="JPY">JPY</option>
+                <option value="GBP">GBP</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="CNY">CNY</option>
+                <option value="SEK">SEK</option>
+                <option value="NZD">NZD</option>
+                <option value="MXN">MXN</option>
+                <option value="SGD">SGD</option>
+                <option value="HKD">HKD</option>
+                <option value="NOK">NOK</option>
+                <option value="KRW">KRW</option>
+                <option value="TRY">TRY</option>
+                <option value="RUB">RUB</option>
+                <option value="INR">INR</option>
+                <option value="BRL">BRL</option>
+                <option value="ZAR">ZAR</option>
+                <option value="PHP">PHP</option>
+                <option value="CZK">CZK</option>
+                <option value="IDR">IDR</option>
+                <option value="MYR">MYR</option>
+                <option value="HUF">HUF</option>
+                <option value="ISK">ISK</option>
+                <option value="HRK">HRK</option>
+                <option value="BGN">BGN</option>
+                <option value="RON">RON</option>
+                <option value="DKK">DKK</option>
+                <option value="THB">THB</option>
+                <option value="PLN">PLN</option>
+                <option value="ILS">ILS</option>
+                <option value="ARS">ARS</option>
+                <option value="CLP">CLP</option>
+                <option value="COP">COP</option>
+                <option value="EGP">EGP</option>
+                <option value="FJD">FJD</option>
+                <option value="HUF">HUF</option>
+                <option value="KES">KES</option>
+                <option value="KWD">KWD</option>
+                <option value="LKR">LKR</option>
+                <option value="MAD">MAD</option>
+                <option value="NGN">NGN</option>
+                <option value="OMR">OMR</option>
+                <option value="PKR">PKR</option>
+                <option value="QAR">QAR</option>
+                <option value="SAR">SAR</option>
+                <option value="TWD">TWD</option>
+                <option value="UGX">UGX</option>
+                <option value="VND">VND</option>
+                <option value="XAF">XAF</option>
+                <option value="XCD">XCD</option>
+                <option value="XOF">XOF</option>
+                <option value="XPF">XPF</option>
+                <option value="ZMW">ZMW</option>
+            </select>
+
+        </div>
+
+        <br>
+
+        <div>
+            <label for="Currency_to">To Currency: </label>
+            <select name="Currency_to" id="Currency_to">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="JPY">JPY</option>
+                <option value="GBP">GBP</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="CNY">CNY</option>
+                <option value="SEK">SEK</option>
+                <option value="NZD">NZD</option>
+                <option value="MXN">MXN</option>
+                <option value="SGD">SGD</option>
+                <option value="HKD">HKD</option>
+                <option value="NOK">NOK</option>
+                <option value="KRW">KRW</option>
+                <option value="TRY">TRY</option>
+                <option value="RUB">RUB</option>
+                <option value="INR">INR</option>
+                <option value="BRL">BRL</option>
+                <option value="ZAR">ZAR</option>
+                <option value="PHP">PHP</option>
+                <option value="CZK">CZK</option>
+                <option value="IDR">IDR</option>
+                <option value="MYR">MYR</option>
+                <option value="HUF">HUF</option>
+                <option value="ISK">ISK</option>
+                <option value="HRK">HRK</option>
+                <option value="BGN">BGN</option>
+                <option value="RON">RON</option>
+                <option value="DKK">DKK</option>
+                <option value="THB">THB</option>
+                <option value="PLN">PLN</option>
+                <option value="ILS">ILS</option>
+                <option value="ARS">ARS</option>
+                <option value="CLP">CLP</option>
+                <option value="COP">COP</option>
+                <option value="EGP">EGP</option>
+                <option value="FJD">FJD</option>
+                <option value="HUF">HUF</option>
+                <option value="KES">KES</option>
+                <option value="KWD">KWD</option>
+                <option value="LKR">LKR</option>
+                <option value="MAD">MAD</option>
+                <option value="NGN">NGN</option>
+                <option value="OMR">OMR</option>
+                <option value="PKR">PKR</option>
+                <option value="QAR">QAR</option>
+                <option value="SAR">SAR</option>
+                <option value="TWD">TWD</option>
+                <option value="UGX">UGX</option>
+                <option value="VND">VND</option>
+                <option value="XAF">XAF</option>
+                <option value="XCD">XCD</option>
+                <option value="XOF">XOF</option>
+                <option value="XPF">XPF</option>
+                <option value="ZMW">ZMW</option>
+
+            </select>
+        </div>
+
+        <div class="conversingAmounts">
+            <label for="amount">Enter Amount: </label><br>
+            <input type="number" id="amount" name="amount" min="1" required>
+            <label id="result" for="result"> <li>Resultant Amount:</li></label><br>
+            <input type="hidden" name="amount" min="1">
+        </div>
+
+        <br>
+
+        <div>
+            <input type="submit" name="submit" id="submit" value="Convert">
+        </div>
+
+        <br>
+
+        <div>
+            <input type="reset" name="reset" id="reset" value="Reset">
+        </div>
+    </form>
+
+
+    <script src="currencyConv.js"></script>
+</body>
+
+</html>

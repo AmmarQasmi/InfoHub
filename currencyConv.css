@@ -1,0 +1,56 @@
+.Currency_Form {
+    max-width: 600px;
+    margin-top: 7%;
+    margin-left: 25%;
+    padding: 20px;
+    border: 1px solid #0e0d0d;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+.Currency_Form div {
+    position: relative;
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.Currency_Form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #0d0d0e;
+}
+
+.Currency_Form select,
+.Currency_Form input[type="submit"],
+.Currency_Form input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.Currency_Form input[type="submit"],
+.Currency_Form input[type="reset"] {
+    background-color: #444446;
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+}
+
+.Currency_Form input[type="submit"]:hover,
+.Currency_Form input[type="reset"]:hover {
+    background-color: #0d0d0e;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .Currency_Form {
+        width: 90%;
+    }
+}
