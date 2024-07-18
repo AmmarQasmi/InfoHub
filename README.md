@@ -1,6 +1,6 @@
-proj.html , proj.css are home page files.
-calc.html,css,js are length converter files.
+Project Files Overview:
 
-Enjoy :)
+Home Page: proj.html, proj.css
+Length Converter: calc.html, calc.css, calc.js
 
-In case of any issue please do inform. 
+Enjoy exploring! Please inform me of any issues.
